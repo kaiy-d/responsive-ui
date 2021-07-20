@@ -24,6 +24,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Dashboard Graph
 
-Since it requires either to use a third party library like Chart.js or React Charts; Or to write an html and javascript to built custom graph. In current trial scopr, the hard coded image is used. However the developemnt of such graph component was underway as in `react-test/src/components/BottomGraph/index.js`
+Since it requires either to use a third party library like Chart.js or React Charts; Or to write an html and javascript to built custom graph. In current trial scopr, the hard coded image is used. However the developemnt of such graph component was underway as in `./src/components/BottomGraph/index.js`
 
 ![screen](https://user-images.githubusercontent.com/84018118/126290784-e3f73da6-572b-41e8-91bf-525feadc8393.png)
