@@ -1,0 +1,22 @@
+@import './mixins';
+
+$fontPath: './assets/fonts/';
+$nunitoPath: $fontPath+'Nunito/';
+
+@include font_face('Nunito',
+  'Nunito-Regular',
+  'Nunito-Normal',
+  $nunitoPath+'Nunito-Regular',
+  400);
+
+@include font_face('Nunito',
+  'Nunito-SemiBold',
+  'Nunito SemiBold',
+  $nunitoPath+'Nunito-SemiBold',
+  600);
+
+@include font_face('Nunito',
+  'Nunito-Bold',
+  'Nunito Bold',
+  $nunitoPath+'Nunito-Bold',
+  700);

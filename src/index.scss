@@ -1,0 +1,49 @@
+@import 'assets/scss/fonts.scss';
+
+body {
+  margin: 0;
+  font-family: 'Nunito' , "Roboto", "Oxygen", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Wrapper {
+  // height: calc(100vh + 284px)
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+
+  .Container__SideMenu {
+    width: 20%;
+    min-width: 158px;
+
+    @media (max-width: 700px) {
+      position: absolute;
+      top: 85px;
+    }
+  }
+
+  .Container__SideMenu__Black {
+    background: 'black';
+  }
+
+  .Container__SideMenu__White {
+    background: 'white';
+  }
+
+  .Container__Content {
+    width: 80%;
+    padding-left: 10px;
+
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

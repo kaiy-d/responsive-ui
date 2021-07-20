@@ -1,0 +1,185 @@
+.Dashboard__InnerContainer {
+  font-family: 'Nunito';
+  padding-left: 70px;
+
+  .Dashboard__Title {
+    font-family: 'Nunito';
+    color: #98989895;
+    font-size: 27px;
+  }
+
+  .Dashboard__InputContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.Dashboard__TextContainer {
+  position: relative;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(0, 0, 0, 0.1), 0px 2px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 45px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  input {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.07);
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: rgba($color: #000000, $alpha: 0.3)
+  }
+
+  button.Dashboard__TextContainer__ShortenBtn {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    outline: none;
+  }
+
+  .Dashboard__TextContainer__Value {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.07);
+    color: rgba($color: #000000, $alpha: 0.3);
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .Dashboard__TextContainer__Label {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    font-size: 10px;
+    font-family: 'Nunito-Bold';
+  }
+}
+
+.Dashboard__Fields_left {
+  width: 60%;
+  min-width: 350px;
+  .Dashboard__TextContainer {
+    border-left: 4px solid #FF5987;
+  }
+
+  @media(max-width: 600px) {
+    width: 80%;
+    max-width: 250px;
+    min-width: 200px;
+  }
+
+  @media (min-width: 701px) and (max-width: 760px) {
+    max-width: 350px;
+    min-width: 200px;
+  }
+}
+
+.Dashboard__Fields_right {
+  width: 150px;
+
+  @media (min-width: 500px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.Dashboard__Btn__Feature {
+  background: transparent;
+  outline: none;
+  border: 1px solid #B6DEF5;
+  margin-top: 8px;
+  position: relative;
+  font-size: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+  .Dashboard__Btn__Feature__Check {
+    background: #FF5987;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .Dashboard__Btn__Feature__Dot {
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.Dashboard__Stats {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  flex-wrap: wrap;
+
+  .Dashboard__Audience__Info {
+    width: 20%;
+    min-width: 130px;
+    display: flex;
+    flex-direction: column;
+
+    div:nth-child(1) {
+      color: #98989895;
+      font-size: 27px;
+    }
+
+    div:nth-child(2) {
+      font-family: 'Nunito';
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    div:nth-child(3),
+    div:nth-child(4) {
+      font-family: 'Nunito';
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #B0B0B0;
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Dashboard__Audience__Btns {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.Dashboard__Graph {
+  position: relative;
+}
+
+.Dashboard__Graph__Image {
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: 912px) {
+    top: -195px;
+  }
+}

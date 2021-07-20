@@ -1,0 +1,8 @@
+@mixin font_face($name, $local1, $local2, $url, $weight, $style: normal) {
+  @font-face {
+    font-family: $name;
+    src: local($local1), local($local2), url($url+'.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
